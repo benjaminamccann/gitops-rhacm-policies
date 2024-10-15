@@ -4,3 +4,4 @@ resources:
   - hub-banner-config.yaml
   - dev-banner-config.yaml
   - prod-banner-config.yaml
+  - lab-banner-config.yaml
