@@ -8,15 +8,15 @@ policyDefaults:
   namespace: policies
   consolidateManifests: false
 policies:
-  - name: operator-configuration
-    description: |
-      This policy ensures that the operators in manifests/operators are deployed to ALL clusters (global clusterset).
-      Currently it deploys the following operators:
-      * web-terminal redhat operator
-    manifests:
-      - path: manifests/operators
-        pruneObjectBehavior: DeleteIfCreated
-        remediationAction: enforce
+#  - name: operator-configuration
+#    description: |
+#      This policy ensures that the operators in manifests/operators are deployed to ALL clusters (global clusterset).
+#      Currently it deploys the following operators:
+#      * web-terminal redhat operator
+#    manifests:
+#      - path: manifests/operators
+#        pruneObjectBehavior: DeleteIfCreated
+#        remediationAction: enforce
   - name: console-banner
     description: |
       This policy ensures that a console banner is present
