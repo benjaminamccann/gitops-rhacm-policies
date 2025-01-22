@@ -24,16 +24,16 @@ policies:
       - path: manifests/console-banner
         pruneObjectBehavior: DeleteIfCreated
         remediationAction: enforce
-  - name: migrate-workloads-to-infra-nodes
-    description: |
-      This policy ensures that the following components are configured to deploy on infrastructure nodes:
-      * Monitoring
-      * Default Router
-      For further information consult:
-        https://docs.openshift.com/container-platform/4.14/machine_management/creating-infrastructure-machinesets.html#moving-resources-to-infrastructure-machinesets
-    manifests:
-      - path: manifests/infrastructure-nodes
-        pruneObjectBehavior: None
-        remediationAction: enforce
-    placement:
-      placementPath: placements/non-hub-placement.yaml
+ # - name: migrate-workloads-to-infra-nodes
+ #   description: |
+ #     This policy ensures that the following components are configured to deploy on infrastructure nodes:
+ #     * Monitoring
+ #     * Default Router
+ #     For further information consult:
+ #       https://docs.openshift.com/container-platform/4.14/machine_management/creating-infrastructure-machinesets.html#moving-resources-to-infrastructure-machinesets
+ #   manifests:
+ #   - path: manifests/infrastructure-nodes
+ #       pruneObjectBehavior: None
+ #       remediationAction: enforce
+ #   placement:
+ #     placementPath: placements/non-hub-placement.yaml
